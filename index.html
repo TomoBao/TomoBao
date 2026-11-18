@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TomoBao — technology enthusiast, Geometry Dash fan, and project builder from Vietnam.">
+  <title>TomoBao | I Love Tech</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0b1020;
+      color: #eef2ff;
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(100% - 40px, 1000px);
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+      gap: 20px;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #73fbd3;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #b5bfd9;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #73fbd3;
+    }
+
+    .hero {
+      padding: 85px 0 65px;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: #73fbd3;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 18px 0;
+      font-size: clamp(3rem, 9vw, 5.7rem);
+      line-height: 1.05;
+      letter-spacing: -0.055em;
+    }
+
+    h1 span {
+      color: #73fbd3;
+    }
+
+    .intro {
+      max-width: 580px;
+      color: #b5bfd9;
+      font-size: 1.15rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border: 1px solid #34415e;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 150ms, background 150ms;
+    }
+
+    .button.primary {
+      background: #73fbd3;
+      color: #0b1020;
+      border-color: #73fbd3;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    a:focus-visible {
+      outline: 3px solid #b4a0ff;
+      outline-offset: 5px;
+    }
+
+    section {
+      padding: 25px 0;
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      letter-spacing: -0.03em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      padding: 26px;
+      background: #131c30;
+      border: 1px solid #293550;
+      border-radius: 18px;
+    }
+
+    .icon {
+      font-size: 2rem;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p,
+    .project p {
+      color: #b5bfd9;
+    }
+
+    .project {
+      padding: 30px;
+      background: linear-gradient(120deg, #17293a, #1e1b38);
+      border: 1px solid #34415e;
+      border-radius: 18px;
+    }
+
+    .project h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 20px 0;
+    }
+
+    .tag {
+      padding: 5px 12px;
+      background: #0b102080;
+      border: 1px solid #34415e;
+      border-radius: 999px;
+      color: #d0d9ee;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 25px 0;
+      border-top: 1px solid #293550;
+      color: #b5bfd9;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 50px;
+      }
+
+      header {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .button {
+        transition: none;
+      }
+
+      .button:hover {
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a class="logo" href="#" aria-label="TomoBao home">
+        Tomo<span>Bao.</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/TomoBao">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="intro-heading">
+        <p class="eyebrow">Vietnam · Technology · Gaming</p>
+        <h1 id="intro-heading">Hi, I’m TomoBao.<br><span>I Love Tech.</span></h1>
+
+        <p class="intro">
+          I love exploring technology, experimenting with devices,
+          and building my own projects. When I’m not tinkering,
+          you’ll probably find me playing Geometry Dash.
+        </p>
+
+        <div class="buttons">
+          <a class="button primary" href="https://github.com/TomoBao">
+            Explore my GitHub ↗
+          </a>
+          <a class="button" href="#projects">See my projects</a>
+        </div>
+      </section>
+
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">A little about me</h2>
+
+        <div class="grid">
+          <article class="card">
+            <span class="icon" aria-hidden="true">🎮</span>
+            <h3>Geometry Dash fan</h3>
+            <p>
+              Jump, crash, retry. I love Geometry Dash and exploring
+              its mods, tools, and creative community.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">📱</span>
+            <h3>Device explorer</h3>
+            <p>
+              From Samsung and Android to iPhones and Windows,
+              I enjoy learning how my devices work.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="icon" aria-hidden="true">💻</span>
+            <h3>Learning by building</h3>
+            <p>
+              I experiment with Python, Discord bots, and virtual
+              machines, then share what I build on GitHub.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Featured project</h2>
+
+        <article class="project">
+          <h3>VMware Screen Monitor</h3>
+          <p>
+            My open-source Python project for monitoring my Windows
+            VMware lab through Discord.
+          </p>
+
+          <div class="tags" aria-label="Project technologies">
+            <span class="tag">Python</span>
+            <span class="tag">Discord</span>
+            <span class="tag">Windows</span>
+            <span class="tag">VMware</span>
+          </div>
+
+          <a
+            class="button"
+            href="https://github.com/TomoBao/VMware-Screen-Monitor"
+          >
+            View repository ↗
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      Made with curiosity by TomoBao. Keep building. Keep jumping.
+    </footer>
+  </div>
+</body>
+</html>
